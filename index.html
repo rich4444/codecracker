@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Code Cracker</title>
+    <script src="https://kit.fontawesome.com/e26da2372a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <script src="./assets/scripts/pins.js" defer></script>
+    <script src="./assets/scripts/index.js" defer></script>
+</head>
+
+<body>
+    <section id="mainContainer">
+        <div id="headerButtonsContainer">
+            <button>
+                <i class="fa-solid fa-gear"></i>
+            </button>
+            <button>
+                <i class="fa-solid fa-user"></i>
+            </button>
+        </div>
+
+        <div id="logo">
+            <img src="./assets/images/codecrackerlogo.png" alt="code cracker logo">
+            <h1>CodeCracker</h1>
+        </div>
+
+        <div id="filtersContainer">
+            <div class="filter">
+                <label for="sortBy">Sort by</label>
+                <select name="sortBy" id="sortBySelect">
+                    <option value="Frequency" title="How often is this pin used">Frequency</option>
+                    <option value="Value" title="Sorter by numeric value(0000, 0001, ...)">Value</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="split">Split by %</label>
+                <select name="split" id="splitSelect">
+                    <option value="100%">100%</option>
+                    <option value="50%">50%</option>
+                    <option value="25%">25%</option>
+                    <option value="20%">20%</option>
+                    <option value="10%">10%</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="batch">Batch</label>
+                <select name="batch" id="batchSelect">
+                    <option value="1">First of one batch</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="orderBy">Order by</label>
+                <select name="orderBy" id="orderBySelect">
+                    <option value="Ascending">Begining</option>
+                    <option value="Descending">End</option>
+                </select>
+            </div>
+
+            <div class="filter">
+                <label for="showAmount">Show</label>
+                <select name="showAmount" id="showAmountSelect">
+                    <option value="5">5</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="pinsContainer">
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+            <div class="pin">1234</div>
+        </div>
+
+        <div id="progressContainer">
+            <div class="progressLegend">33% of 10.000 PINS</div>
+            <div class="progressBar"></div>
+        </div>
+
+        <div id="navigationContainer">
+            <button id="prevPage">Previous</button>
+            <div id="pagination">Page 1 of 1000</div>
+            <button id="nextPage">Next</button>
+        </div>
+    </section>
+
+    <!-- TODO create confirmation pop up for next and prev -->
+</body>
+
+</html>

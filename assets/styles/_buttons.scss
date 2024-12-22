@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+* button{
+    border: none;
+    outline: none;
+    background-color: $main-color-light;
+    color: $main-color-dark;
+    cursor: pointer;
+    box-shadow: 0 0px 2px rgba(0, 0, 0, 0);
+    transition: all .5s ease;
+    user-select: none;
+
+    &:hover{
+        transition: all .1s ease;
+        translate: 0 -2px;
+        box-shadow: 0 6px 2px $main-shadow;
+    }
+
+    &:active{
+        translate: 0 2px;
+        box-shadow: 0 0px 5px 2px $main-color-dark;
+    }
+}

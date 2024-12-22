@@ -1,0 +1,8 @@
+$main-color: #E75921;
+$main-color-light: #FF8656;
+$main-color-dark: #A8380B;
+$main-shadow: color-mix(in srgb, $main-color-dark 80%, transparent 20%);
+$main-light: color-mix(in srgb, $main-color-light 80%, transparent 20%);
+$secondary-color: #312AA1;
+$highlight-color: #C6E120;
+$white: rgb(233, 232, 226);
